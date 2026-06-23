@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+    <title> INFINITY SPOT </title>
+    <link rel="stylesheet"href="style.css">
+    
+    </head>
+    
+    <body>
+      <div class="NavigationBar">
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+      <h1>INFINITYSPOT</h1>
+      <div class="menu">
+        <a href="Home.html">Home</a>
+        <a href="Movies.html">Movies</a>
+        <a href="Contact.html">Contact</a>
+        <a href="Update.html">App update</a>
+      </div>
+      </div>
+      <hr>
+      <div class="search-container">
+      <input type="text" id="searchBox" placeholder="Search Movies">
+      <button onclick="searchMovie()" >🔍</button>
+      </div>
+      <hr>
+      <h2>#Trending Movies</h2>
+      <div id="movie-container"></div>
+      <script src="script.js"></script>
+    </body>
+</html>

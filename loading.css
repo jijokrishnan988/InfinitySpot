@@ -1,0 +1,50 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#000;
+    overflow:hidden;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* Moving Background */
+
+.background{
+    position:fixed;
+    top:-50%;
+    left:-50%;
+    width:200%;
+    height:200%;
+    background:
+        radial-gradient(circle at 25% 30%, rgba(255,0,0,0.45), transparent 35%),
+        radial-gradient(circle at 75% 70%, rgba(255,0,0,0.35), transparent 40%),
+        radial-gradient(circle at 50% 50%, rgba(120,0,0,0.25), transparent 45%),
+        #000;
+    filter:blur(90px);
+    animation:bgMove 10s ease-in-out infinite alternate;
+    z-index:-1;
+}
+
+@keyframes bgMove{
+
+    0%{
+        transform:translate(-10%,-10%) scale(1);
+    }
+
+    25%{
+        transform:translate(10%,-5%) scale(1.1);
+    }
+
+    50%{
+        transform:translate(-5%,10%) scale(1.2);
+    }
+
+    75%{
+        transform:translate(8%,8%)
